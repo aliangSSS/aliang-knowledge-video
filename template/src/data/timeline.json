@@ -1,0 +1,5 @@
+{"fps": 30, "width": 1920, "height": 1080, "frames": 150, "duration": 5, "meta": {}, "glyphs": "先写这个主题自己的场景",
+ "bgm": {"bpm": 114.84, "key": "F major", "source": "placeholder"}, "beats": [0, 16, 31, 47, 63, 78, 94, 110, 125, 141], "downbeats": [0, 63, 125], "hits": {},
+ "scenes": [{"id": "placeholder", "type": "Placeholder", "from": 0, "dur": 150, "props": {}, "events": {}, "subs": [], "fadeIn": 0, "fadeOut": 0,
+   "cam0": {"x": 0, "y": 0, "z": 1}, "cam1": {"x": 0, "y": 0, "z": 1.02}, "in": null}],
+ "subs": [], "flashes": [], "shakes": [], "cues": []}

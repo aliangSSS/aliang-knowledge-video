@@ -1,0 +1,1166 @@
+{
+  "meta": {
+    "topic": "墨菲定律",
+    "insight": "怕什么来什么，不是宇宙跟你作对，是概率和记忆偏差；墨菲定律本来是一条安全守则",
+    "title": "墨菲定律",
+    "subtitle": "凡是可能出错的，终将出错",
+    "en": "Murphy's Law",
+    "sfxGain": 0,
+    "bg": {
+      "center": "#0b0a09",
+      "edge": "#020202",
+      "stars": 60,
+      "grain": 0.6,
+      "starColor": "#e8dccb"
+    }
+  },
+  "scenes": [
+    {
+      "id": "montage",
+      "type": "Montage",
+      "minSec": 10.3,
+      "props": {
+        "labels": [
+          "电量 1%",
+          "隔壁那队又动了",
+          "黄油面朝下",
+          "刚出门就下雨",
+          "耳机线又打结了"
+        ]
+      },
+      "subs": [
+        {
+          "zh": "你一定也有过这样的时刻",
+          "en": "You've been here before.",
+          "at": 0.4
+        },
+        {
+          "zh": "越怕什么，越来什么",
+          "en": "Whatever you dread is exactly what arrives.",
+          "at": 5.2
+        }
+      ],
+      "events": [
+        {
+          "name": "cuts",
+          "at": 1.9,
+          "snap": "downbeat",
+          "repeat": {
+            "count": 4,
+            "every": 4
+          },
+          "sfx": {
+            "type": "tap",
+            "gain": -6
+          }
+        },
+        {
+          "name": "drain",
+          "at": 0.2,
+          "snap": "half",
+          "repeat": {
+            "count": 5,
+            "every": 0.5
+          },
+          "sfx": {
+            "type": "ui_tick",
+            "gain": -4
+          }
+        },
+        {
+          "name": "dead",
+          "at": "cuts-1b",
+          "snap": "beat",
+          "sfx": {
+            "type": "error",
+            "gain": -2
+          }
+        },
+        {
+          "name": "beeps",
+          "at": "cuts+1b",
+          "snap": "half",
+          "repeat": {
+            "count": 4,
+            "every": 0.5
+          },
+          "sfx": {
+            "type": "select",
+            "gain": -4,
+            "pan": -0.5
+          }
+        },
+        {
+          "name": "slide",
+          "at": "cuts+4.5b",
+          "snap": "half",
+          "sfx": {
+            "type": "swish",
+            "dur": 0.3,
+            "gain": -6
+          }
+        },
+        {
+          "name": "land",
+          "at": "cuts+6b",
+          "snap": "beat",
+          "sfx": [
+            {
+              "type": "soft"
+            },
+            {
+              "type": "plate",
+              "gain": -8
+            }
+          ]
+        },
+        {
+          "name": "door",
+          "at": "cuts+9b",
+          "snap": "beat",
+          "sfx": {
+            "type": "wood",
+            "gain": -2
+          }
+        },
+        {
+          "name": "rain",
+          "at": "cuts+10b",
+          "snap": "beat",
+          "sfx": {
+            "type": "rain",
+            "dur": 2.2,
+            "gain": 2
+          }
+        },
+        {
+          "name": "wiggle",
+          "at": "cuts+12.5b",
+          "snap": "half",
+          "sfx": {
+            "type": "scratch",
+            "gain": -2
+          }
+        },
+        {
+          "name": "knot",
+          "at": "cuts+14.5b",
+          "snap": "half",
+          "sfx": {
+            "type": "pluck",
+            "gain": -2
+          }
+        }
+      ]
+    },
+    {
+      "id": "pinboard",
+      "type": "Pinboard",
+      "minSec": 6.2,
+      "in": {
+        "type": "zoom",
+        "dur": 0.4
+      },
+      "cam": {
+        "x": 0,
+        "y": 150,
+        "z": 0.4
+      },
+      "camTo": {
+        "x": 0,
+        "y": 40,
+        "z": 0.62
+      },
+      "props": {
+        "board": true
+      },
+      "subs": [
+        {
+          "zh": "是全世界都在跟你作对吗？",
+          "en": "Is the whole world against you?",
+          "at": 2.2,
+          "hold": 3.6
+        }
+      ],
+      "events": [
+        {
+          "name": "drop",
+          "at": 0,
+          "snap": "beat",
+          "repeat": {
+            "count": 5,
+            "every": 0.5
+          },
+          "sfx": {
+            "type": "thud",
+            "gain": -3
+          }
+        },
+        {
+          "name": "threads",
+          "at": "drop+3.5b",
+          "snap": "half",
+          "repeat": {
+            "count": 5,
+            "every": 0.5
+          },
+          "sfx": {
+            "type": "scratch",
+            "gain": -6
+          }
+        },
+        {
+          "name": "vac",
+          "at": "end",
+          "snap": "none",
+          "sfx": {
+            "type": "suck",
+            "dur": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "title",
+      "type": "TitleCase",
+      "anchor": "title",
+      "minSec": 6,
+      "cam": {
+        "x": 0,
+        "y": 63,
+        "z": 1.9
+      },
+      "drift": 0.015,
+      "props": {
+        "board": true,
+        "title": "墨菲定律",
+        "sub": "凡是可能出错的，终将出错",
+        "en": "MURPHY'S LAW",
+        "file": "立案 · 案卷 No.1949"
+      },
+      "events": [
+        {
+          "name": "hit",
+          "at": 0,
+          "snap": "none",
+          "flash": true,
+          "shake": {
+            "amp": 16,
+            "n": 14
+          },
+          "sfx": [
+            "stamp",
+            {
+              "type": "sub"
+            },
+            {
+              "type": "hit",
+              "gain": -4
+            }
+          ]
+        },
+        {
+          "name": "sub",
+          "at": "hit+2b",
+          "snap": "beat",
+          "sfx": {
+            "type": "bell",
+            "note": 5,
+            "gain": -2
+          }
+        },
+        {
+          "name": "file",
+          "at": "hit+4b",
+          "snap": "beat",
+          "sfx": {
+            "type": "click",
+            "gain": -2
+          }
+        }
+      ]
+    },
+    {
+      "id": "queue",
+      "type": "QueueExhibit",
+      "cam": {
+        "x": -1050,
+        "y": -353,
+        "z": 2.1
+      },
+      "in": {
+        "type": "pan",
+        "dur": 1.2,
+        "bow": 0.5
+      },
+      "props": {
+        "board": true,
+        "label": "证物 1 · 排队",
+        "stamp": "不是运气",
+        "why": "概率 · 1/3"
+      },
+      "subs": [
+        {
+          "zh": "三条队，最快的那条只有一条",
+          "en": "Three lines. Only one of them is the fastest."
+        },
+        {
+          "zh": "你站进它的机会，只有三分之一",
+          "en": "Your odds of picking it: one in three."
+        }
+      ],
+      "events": [
+        {
+          "name": "flow",
+          "at": 0.4,
+          "snap": "beat",
+          "repeat": {
+            "count": 4,
+            "every": 1
+          },
+          "sfx": {
+            "type": "select",
+            "gain": -5,
+            "pan": -0.5
+          }
+        },
+        {
+          "name": "switch",
+          "at": "flow+4b",
+          "snap": "beat",
+          "sfx": {
+            "type": "swish",
+            "dur": 0.35,
+            "gain": -5
+          }
+        },
+        {
+          "name": "stall",
+          "at": "switch+2b",
+          "snap": "beat",
+          "sfx": {
+            "type": "question",
+            "gain": -2,
+            "pan": 0.4
+          }
+        },
+        {
+          "name": "scan",
+          "at": "sub1.in",
+          "snap": "beat",
+          "repeat": {
+            "count": 6,
+            "every": 0.5
+          },
+          "sfx": {
+            "type": "click",
+            "gain": -5
+          }
+        },
+        {
+          "name": "verdict",
+          "at": "scan+4b",
+          "snap": "beat",
+          "shake": 10,
+          "sfx": "stamp"
+        }
+      ]
+    },
+    {
+      "id": "toast",
+      "type": "ToastExhibit",
+      "cam": {
+        "x": 0,
+        "y": -553,
+        "z": 2.1
+      },
+      "in": {
+        "type": "pan",
+        "dur": 1.1,
+        "bow": 0.4
+      },
+      "lead": 0.6,
+      "tail": 0.8,
+      "props": {
+        "board": true,
+        "label": "证物 2 · 吐司",
+        "stamp": "不是运气",
+        "why": "桌子的高度",
+        "meta": "1995 · 马修斯 · 欧洲物理学杂志",
+        "aZh": "0.75 米 · 转半圈",
+        "bZh": "3 米 · 转满一圈"
+      },
+      "subs": [
+        {
+          "zh": "从餐桌掉下，吐司只来得及转半圈",
+          "en": "Off a table, toast only has time for half a turn."
+        },
+        {
+          "zh": "黄油面朝下，是桌子高度决定的",
+          "en": "Butter-side down is decided by the table's height."
+        }
+      ],
+      "events": [
+        {
+          "name": "slide",
+          "at": 0.5,
+          "snap": "beat",
+          "sfx": {
+            "type": "swish",
+            "dur": 0.4,
+            "gain": -7
+          }
+        },
+        {
+          "name": "land",
+          "at": "slide+3b",
+          "snap": "beat",
+          "sfx": [
+            {
+              "type": "soft"
+            },
+            {
+              "type": "plate",
+              "gain": -8
+            }
+          ]
+        },
+        {
+          "name": "tall",
+          "at": "sub1.in",
+          "snap": "beat",
+          "sfx": {
+            "type": "glide",
+            "note": 0,
+            "to": 5
+          }
+        },
+        {
+          "name": "verdict",
+          "at": "tall+5b",
+          "snap": "beat",
+          "shake": 10,
+          "sfx": "stamp"
+        }
+      ]
+    },
+    {
+      "id": "knot",
+      "type": "KnotExhibit",
+      "cam": {
+        "x": 1050,
+        "y": -353,
+        "z": 2.1
+      },
+      "in": {
+        "type": "pan",
+        "dur": 1.1,
+        "bow": 0.4
+      },
+      "lead": 0.5,
+      "tail": 0.6,
+      "props": {
+        "board": true,
+        "label": "证物 3 · 耳机线",
+        "stamp": "不是运气",
+        "why": "统计",
+        "meta": "2007 · 加州大学圣迭戈分校",
+        "stat": "1.5 米的线 · 约一半会打结"
+      },
+      "subs": [
+        {
+          "zh": "线够长、晃够久，一半会自己打结",
+          "en": "Long enough, shaken long enough: half of them knot themselves."
+        }
+      ],
+      "events": [
+        {
+          "name": "shake",
+          "at": 0.3,
+          "snap": "beat",
+          "repeat": {
+            "count": 6,
+            "every": 1
+          },
+          "sfx": {
+            "type": "knock",
+            "gain": -6
+          }
+        },
+        {
+          "name": "knot",
+          "at": "shake+6b",
+          "snap": "beat",
+          "sfx": [
+            {
+              "type": "scratch"
+            },
+            {
+              "type": "pluck",
+              "gain": -3
+            }
+          ]
+        },
+        {
+          "name": "verdict",
+          "at": "knot+2b",
+          "snap": "beat",
+          "shake": 10,
+          "sfx": "stamp"
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "type": "MemoryCalendar",
+      "cam": {
+        "x": 0,
+        "y": 1043,
+        "z": 1.35
+      },
+      "in": {
+        "type": "pan",
+        "dur": 1.6,
+        "bow": 0.6
+      },
+      "props": {
+        "board": true,
+        "label": "证物 4 · 一个月",
+        "bad": [
+          6,
+          15,
+          23
+        ],
+        "badZh": [
+          "错过末班车",
+          "手机摔了",
+          "被雨淋透"
+        ],
+        "meta": "2001 · 鲍迈斯特 ·《坏比好更强大》"
+      },
+      "subs": [
+        {
+          "zh": "一个月里，大多数日子平安无事",
+          "en": "In a month, most days pass without incident."
+        },
+        {
+          "zh": "可坏事比好事更容易被记住",
+          "en": "But the bad ones stick in memory far longer."
+        }
+      ],
+      "events": [
+        {
+          "name": "days",
+          "at": 0.5,
+          "snap": "half",
+          "repeat": {
+            "count": 30,
+            "every": 0.25
+          },
+          "sfx": {
+            "type": "ui_tick",
+            "gain": -8
+          }
+        },
+        {
+          "name": "bad",
+          "at": "days+8b",
+          "snap": "beat",
+          "repeat": {
+            "count": 3,
+            "every": 1
+          },
+          "sfx": {
+            "type": "knock",
+            "gain": -2
+          }
+        },
+        {
+          "name": "thread",
+          "at": "sub1.in",
+          "snap": "beat",
+          "sfx": {
+            "type": "scratch",
+            "gain": -3
+          }
+        }
+      ]
+    },
+    {
+      "id": "culprit",
+      "type": "Culprit",
+      "anchor": "reveal",
+      "anchorOffset": -4.15,
+      "in": {
+        "type": "black",
+        "dur": 0.7
+      },
+      "lead": 0.3,
+      "cam": {
+        "x": 0,
+        "y": 508,
+        "z": 1.8
+      },
+      "drift": 0,
+      "props": {
+        "tex": "P = 1 − (1 − p)^{n}",
+        "zh": "至少出错一次",
+        "en": "at least once",
+        "stamp": "真凶",
+        "counts": [
+          "2",
+          "5",
+          "10",
+          "30",
+          "100",
+          "300",
+          "600",
+          "1000",
+          "3000",
+          "10000"
+        ],
+        "unit": "次",
+        "marks": [
+          {
+            "n": 100,
+            "v": "63%"
+          },
+          {
+            "n": 300,
+            "v": "95%"
+          },
+          {
+            "n": 500,
+            "v": "99%"
+          }
+        ],
+        "xZh": "次数",
+        "yZh": "至少错一次"
+      },
+      "subs": [
+        {
+          "zh": "每天，你要做上千件小事",
+          "en": "Every day you do a thousand small things.",
+          "at": 0.3
+        },
+        {
+          "zh": "就算每件只有 1% 会出错",
+          "en": "Even if each has only a 1% chance of going wrong…"
+        },
+        {
+          "zh": "做满 100 次，至少错一次的机会是 63%",
+          "en": "…do it 100 times and the odds of at least one failure are 63%."
+        }
+      ],
+      "events": [
+        {
+          "name": "count",
+          "at": "@reveal",
+          "snap": "none",
+          "roll": [
+            1,
+            1,
+            0.5,
+            0.5,
+            0.5,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            1
+          ],
+          "tickSfx": {
+            "type": "tick",
+            "gain": -2
+          }
+        },
+        {
+          "name": "vac",
+          "at": "@reveal",
+          "snap": "none",
+          "sfx": {
+            "type": "suck",
+            "dur": 0.5
+          }
+        },
+        {
+          "name": "hit",
+          "at": "@reveal",
+          "snap": "none",
+          "flash": true,
+          "shake": {
+            "amp": 18,
+            "n": 14
+          },
+          "sfx": [
+            "stamp",
+            {
+              "type": "sub"
+            },
+            {
+              "type": "hit",
+              "gain": -3
+            }
+          ]
+        },
+        {
+          "name": "curve",
+          "at": "hit+4b",
+          "snap": "beat",
+          "sfx": {
+            "type": "glide",
+            "note": 0,
+            "to": 4
+          }
+        },
+        {
+          "name": "marks",
+          "at": "curve+2b",
+          "snap": "beat",
+          "repeat": {
+            "count": 3,
+            "every": 2
+          },
+          "sfx": {
+            "type": "bell",
+            "note": "up",
+            "base": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "city",
+      "type": "CityZoom",
+      "in": {
+        "type": "zoom",
+        "dur": 0.6
+      },
+      "cam": {
+        "x": 0,
+        "y": 508,
+        "z": 1.8
+      },
+      "drift": 0,
+      "props": {
+        "levels": [
+          "一个人",
+          "一栋楼",
+          "一个街区",
+          "一座城市"
+        ]
+      },
+      "subs": [
+        {
+          "zh": "放到一座千万人的城市里",
+          "en": "Now scale it up to a city of ten million."
+        },
+        {
+          "zh": "每一秒，都有人正在倒霉",
+          "en": "Every second, someone, somewhere, is having that bad luck."
+        }
+      ],
+      "events": [
+        {
+          "name": "levels",
+          "at": 0.3,
+          "snap": "beat",
+          "repeat": {
+            "count": 4,
+            "every": 3
+          },
+          "sfx": {
+            "type": "swish",
+            "dur": 0.5,
+            "gain": -8
+          }
+        },
+        {
+          "name": "flicker",
+          "at": "sub1.in",
+          "snap": "beat",
+          "repeat": {
+            "count": 8,
+            "every": 0.5
+          },
+          "sfx": {
+            "type": "clink",
+            "gain": -7
+          }
+        }
+      ]
+    },
+    {
+      "id": "verdict",
+      "type": "Verdict",
+      "in": {
+        "type": "blur",
+        "dur": 0.7
+      },
+      "cam": {
+        "x": 0,
+        "y": 508,
+        "z": 1.8
+      },
+      "props": {
+        "board": true,
+        "stamp": "无罪",
+        "en": "NOT GUILTY"
+      },
+      "subs": [
+        {
+          "zh": "宇宙没有针对你，只是人太多了",
+          "en": "The universe isn't out to get you. There are just a lot of us."
+        },
+        {
+          "zh": "那么，墨菲到底是谁？",
+          "en": "So who, exactly, was Murphy?"
+        }
+      ],
+      "events": [
+        {
+          "name": "hit",
+          "at": "sub0.in+0.5",
+          "snap": "downbeat",
+          "shake": 12,
+          "sfx": [
+            "stamp",
+            {
+              "type": "sub",
+              "gain": -4
+            }
+          ]
+        },
+        {
+          "name": "who",
+          "at": "sub1.in",
+          "snap": "beat",
+          "sfx": {
+            "type": "question",
+            "gain": -3
+          }
+        }
+      ]
+    },
+    {
+      "id": "archive",
+      "type": "Archive",
+      "in": {
+        "type": "black",
+        "dur": 1.0
+      },
+      "cam": {
+        "x": 0,
+        "y": 150,
+        "z": 0.4
+      },
+      "drift": 0,
+      "tail": 2.0,
+      "props": {
+        "file": "案卷 · 1949 · MX981",
+        "label": "人体减速实验 · DECELERATION",
+        "count": [
+          "3",
+          "2",
+          "1"
+        ]
+      },
+      "subs": [
+        {
+          "zh": "1949 年，穆罗克陆军机场",
+          "en": "1949. Muroc Army Air Field, California."
+        },
+        {
+          "zh": "火箭滑车实验，传感器读数一直是 0",
+          "en": "A rocket-sled test. The sensors kept reading zero."
+        },
+        {
+          "zh": "有人把传感器接反了",
+          "en": "Someone had wired them backwards."
+        }
+      ],
+      "events": [
+        {
+          "name": "open",
+          "at": 0.4,
+          "snap": "beat",
+          "sfx": [
+            {
+              "type": "swish",
+              "dur": 0.5,
+              "gain": -7
+            },
+            {
+              "type": "plank",
+              "gain": -6
+            }
+          ]
+        },
+        {
+          "name": "draw",
+          "at": "open+1b",
+          "snap": "beat",
+          "sfx": {
+            "type": "scroll",
+            "gain": -4
+          }
+        },
+        {
+          "name": "zero",
+          "at": "sub1.in+1",
+          "snap": "beat",
+          "repeat": {
+            "count": 3,
+            "every": 1
+          },
+          "sfx": {
+            "type": "error",
+            "gain": -5
+          }
+        },
+        {
+          "name": "wire",
+          "at": "sub2.in",
+          "snap": "beat",
+          "sfx": [
+            {
+              "type": "glitch"
+            },
+            {
+              "type": "metal_light",
+              "gain": -4
+            }
+          ]
+        },
+        {
+          "name": "count",
+          "at": "@twist-3b",
+          "snap": "beat",
+          "repeat": {
+            "count": 3,
+            "every": 1
+          },
+          "sfx": {
+            "type": "click",
+            "gain": 0
+          }
+        },
+        {
+          "name": "vac",
+          "at": "@twist",
+          "snap": "none",
+          "sfx": {
+            "type": "suck",
+            "dur": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "launch",
+      "type": "Launch",
+      "anchor": "twist",
+      "minSec": 14,
+      "cam": {
+        "x": 0,
+        "y": 150,
+        "z": 0.4
+      },
+      "drift": 0,
+      "props": {
+        "meta": "1954 · 霍洛曼空军基地",
+        "speed": 1017,
+        "unit": "km/h",
+        "g": "46.2 g"
+      },
+      "subs": [
+        {
+          "zh": "他们把每一种出错的可能，都提前想了一遍",
+          "en": "Before every run, they went through every way it could go wrong.",
+          "at": 1.6
+        },
+        {
+          "zh": "1954 年，斯塔普亲自以时速 1017 公里冲刺",
+          "en": "In 1954, Stapp rode it himself, at 1,017 km/h."
+        },
+        {
+          "zh": "墨菲定律，本来是一条安全守则",
+          "en": "Murphy's law began as a safety rule."
+        }
+      ],
+      "events": [
+        {
+          "name": "hit",
+          "at": 0,
+          "snap": "none",
+          "flash": true,
+          "shake": {
+            "amp": 22,
+            "n": 24
+          },
+          "sfx": [
+            {
+              "type": "thruster"
+            },
+            {
+              "type": "boom_low",
+              "gain": -2
+            },
+            {
+              "type": "sub"
+            }
+          ]
+        },
+        {
+          "name": "brake",
+          "at": "hit+10b",
+          "snap": "beat",
+          "shake": {
+            "amp": 26,
+            "n": 18
+          },
+          "sfx": [
+            {
+              "type": "explosion",
+              "gain": -3
+            },
+            {
+              "type": "metal_heavy",
+              "gain": -4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fixes",
+      "type": "Fixes",
+      "in": {
+        "type": "blur",
+        "dur": 0.8
+      },
+      "cam": {
+        "x": 0,
+        "y": 150,
+        "z": 0.4
+      },
+      "camTo": {
+        "x": 0,
+        "y": 120,
+        "z": 0.45
+      },
+      "tail": 0.8,
+      "props": {
+        "board": true,
+        "tags": [
+          {
+            "card": "queue",
+            "zh": "一条队，谁空谁上"
+          },
+          {
+            "card": "umbrella",
+            "zh": "出门看一眼天气"
+          },
+          {
+            "card": "knot",
+            "zh": "收线器"
+          },
+          {
+            "card": "battery",
+            "zh": "睡前充电"
+          },
+          {
+            "card": "toast",
+            "zh": "盘子别放桌边"
+          }
+        ]
+      },
+      "subs": [
+        {
+          "zh": "墨菲定律不是诅咒，是一份检查清单",
+          "en": "Murphy's law isn't a curse. It's a checklist."
+        },
+        {
+          "zh": "把会出错的地方，提前堵上",
+          "en": "Find what can fail, and fix it first."
+        }
+      ],
+      "events": [
+        {
+          "name": "tags",
+          "at": "sub0.in+0.4",
+          "snap": "beat",
+          "repeat": {
+            "count": 5,
+            "every": 1
+          },
+          "sfx": {
+            "type": "tap",
+            "gain": -2
+          }
+        },
+        {
+          "name": "gold",
+          "at": "sub1.in",
+          "snap": "beat",
+          "repeat": {
+            "count": 5,
+            "every": 0.5
+          },
+          "sfx": {
+            "type": "chime",
+            "gain": -7
+          }
+        }
+      ]
+    },
+    {
+      "id": "closed",
+      "type": "CaseClosed",
+      "anchor": "end",
+      "in": {
+        "type": "pan",
+        "dur": 1.0
+      },
+      "fadeOut": 2.0,
+      "drift": 0.01,
+      "cam": {
+        "x": 0,
+        "y": 63,
+        "z": 1.9
+      },
+      "props": {
+        "board": true,
+        "stamp": "结案",
+        "title": "墨菲定律",
+        "line": "凡是可能出错的，终将出错",
+        "line2": "所以，提前准备"
+      },
+      "events": [
+        {
+          "name": "stamp",
+          "at": 0,
+          "snap": "none",
+          "shake": 12,
+          "sfx": [
+            "stamp",
+            {
+              "type": "sub",
+              "gain": -3
+            }
+          ]
+        },
+        {
+          "name": "line",
+          "at": "stamp+2b",
+          "snap": "beat",
+          "sfx": {
+            "type": "bell",
+            "note": 5,
+            "gain": -3
+          }
+        }
+      ]
+    }
+  ]
+}
